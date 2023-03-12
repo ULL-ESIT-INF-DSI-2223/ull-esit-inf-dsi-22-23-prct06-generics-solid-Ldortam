@@ -3,6 +3,7 @@
 
 ## Índice
 1. [Resumen](#resumen)
+2. [Coveralls](#coveralls)
 2. [Práctica](#práctica)
 3. [Modificación](#modificación)
 4. [Conclusiones](#conclusiones)
@@ -11,6 +12,10 @@
 ## Resumen
 <!-- qué se hace y para qu se hace -->
 Esta práctica consiste en resolver una serie de ejercicios que nos enseñaran a manejar mejo las clases e interfaces genéricas dellenguaje TypeScript. Al igual que obligarnos a utilizar los principios SOLID de diseño orientados a objetos.
+
+## Coveralls
+
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-Ldortam/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-Ldortam?branch=main)
 
 ## Práctica
 <!-- Explicar desarrollo de la prácica -->
