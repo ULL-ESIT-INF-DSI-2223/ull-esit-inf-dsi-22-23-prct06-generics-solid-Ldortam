@@ -1,22 +1,24 @@
-import { Collectable } from "./Collectable";
-import { Searchable } from "./Searchable";
+import { Searchable } from "../ejercicio-mod1/Searchable";
+import { Search } from "./Search";
+import { Streamable } from "./Streamable";
+
 /**
- * Clase abstracta Searchable collection
+ * Clase abstracta BasicStreamableCollection
  */
-export abstract class SearchableCollection<T> implements Searchable<T>,Collectable<T> {
+export abstract class BasicStreamableCollection<T> implements Streamable<T>,Search<T> {
     /**
      * Constructor de la clase abstracta SearchableColletion
      * @param items Array de tipo T
      */
-    constructor(protected items: T[]) {    
+    constructor(protected items: T[]) {
     }
     /**
      * Añade un nuevo elemento al Array
-     * @param newItem Elemento tipo T a añadir
+     * @param newStream Elemento tipo T a añadir
      * @return Último elemento del array que debería ser el mismo al añadido
      */
-    addItem(newItem: T) {
-        this.items.push(newItem)
+    addStream(newStream: T) {
+        this.items.push(newStream);
         return this.items[this.items.length - 1]
     }
     /**
@@ -24,15 +26,15 @@ export abstract class SearchableCollection<T> implements Searchable<T>,Collectab
      * @param index Posición del elemento en el array 
      * @returns Elemento en esa posición
      */
-    getItem(index: number) {
-        return this.items[index]
+    getStream(index: number) {
+        return this.items[index];
     }
     /**
      * Elimina elemento del array
      * @param index Posición del elemento
      * @returns Elemento que se eliminó
      */
-    removeItem(index: number) {
+    removeStream(index: number) {
         let eliminate = this.items.slice(index)
         return eliminate[0]
     }
@@ -40,8 +42,8 @@ export abstract class SearchableCollection<T> implements Searchable<T>,Collectab
      * Da el número de elementos en el array
      * @returns Tamaño del array
      */
-    getNumberOfItems() {
-        return this.items.length;
+    getNumberOfStreams() {
+        return this.items.length
     }
     /**
      * Busca elemento en el array
