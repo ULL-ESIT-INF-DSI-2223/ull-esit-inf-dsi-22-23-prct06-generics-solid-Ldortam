@@ -1,6 +1,8 @@
 import { BasicStreamableCollection } from "./BasicStreamableCollection";
 
-
+/**
+ * Clase SeriesStreamableCollection
+ */
 export class SeriesStreamableCollection extends BasicStreamableCollection<string> {
     /**
      * Constructor de la clase SeriesStreamableCollection 

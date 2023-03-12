@@ -1,4 +1,3 @@
-import { Searchable } from "../ejercicio-mod1/Searchable";
 import { Search } from "./Search";
 import { Streamable } from "./Streamable";
 
